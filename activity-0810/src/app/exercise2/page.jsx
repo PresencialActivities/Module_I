@@ -22,6 +22,8 @@ export default function Exercise2(){
                 <h2>Información general</h2>
                 <p>{item.username}</p>
                 <p>{item.email}</p>
+                <p>{item.phone}</p>
+                <p>{item.website}</p>
                 <h2>Dirección</h2>
                 <p>{item.address.street}</p>
                 <p>{item.address.suite}</p>
@@ -29,6 +31,10 @@ export default function Exercise2(){
                 <p>{item.address.zipcode}</p>
                 <p>{item.address.geo.lat}</p>
                 <p>{item.address.geo.lng}</p>
+                <h2>Empresa</h2>
+                <p>{item.company.name}</p>
+                <p>{item.company.catchPhrase}</p>
+                <p>{item.company.bs}</p>
             </ListGroup.Item>
         )}
     </ListGroup>
