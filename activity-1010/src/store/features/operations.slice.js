@@ -14,7 +14,7 @@ export const operationSlice = createSlice({
     {
         getDivision: (state, action) => {
             console.log(`getDivision:: action ${JSON.stringify(action)}`);
-            state.division = action.payload.division / action.payload.dividendo;
+            state.division = action.payload.divisor / action.payload.dividendo;
         },
         getModule: (state, action) => {
             console.log(`getModule:: action ${JSON.stringify(action)}`);

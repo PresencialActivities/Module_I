@@ -12,8 +12,8 @@ export default function Home() {
   const [divisor, useDivisor] = useState(0);
   const [dividendo, useDividendo] = useState(0);
 
-  const handleDivision = () => dispatch(getDivision());
-  const handleModule = () => dispatch(getModule());
+  const handleDivision = () => dispatch(getDivision({divisor, dividendo}));
+  const handleModule = () => dispatch(getModule({divisor, dividendo}));
 
   return (
     <Container>
